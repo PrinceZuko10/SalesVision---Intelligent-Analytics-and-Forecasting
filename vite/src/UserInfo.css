@@ -1,0 +1,132 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+  background: #000000;
+}
+
+.user-info-container {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  width: 400px;
+  text-align: center;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  animation: slideIn 0.8s ease;
+  margin-right: 50px;
+  color: #ffffff;
+}
+
+.title {
+  color: #ff3333; 
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.user-details {
+  text-align: left;
+  background: #2a2a2a;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+  border: 1px solid #333;
+  font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+.user-details:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.user-details p {
+  margin: 0.5rem 0;
+  color: #cccccc;
+  font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+.back-button {
+  background: #ff3333; 
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.back-button:hover {
+  background: #cc0000;
+}
+
+.message {
+  color: #cccccc;
+  font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ... (keep all existing styles) ... */
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.action-button {
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.predict-button {
+  background: #4CAF50; /* Green color */
+  color: white;
+}
+
+.predict-button:hover {
+  background: #3e8e41;
+  transform: translateY(-2px);
+}
+
+.back-button {
+  background: #ff3333; 
+  color: white;
+}
+
+.back-button:hover {
+  background: #cc0000;
+  transform: translateY(-2px);
+}
+
+/* Animation for buttons */
+.action-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
